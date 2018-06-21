@@ -1,0 +1,29 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf dist .nuxt && npm run lint",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "npm run clean && nuxt generate",
+    "lint": "eslint --fix --ext .js,.vue .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "nuxt": "npm:nuxt-edge",
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3"
+  }
+}
