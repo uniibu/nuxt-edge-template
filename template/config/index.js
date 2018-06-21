@@ -1,5 +1,5 @@
 const isDev = process.env.NODE_ENV === 'development';
-
+const { resolve, extname } = require('path');
 module.exports = {
   mode: '{{ mode }}',
   head: {
